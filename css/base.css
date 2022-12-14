@@ -1,0 +1,8 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;font-family:"Noto Sans KR", sans-serif;box-sizing:border-box;}
+a{text-decoration:none; color:#000;}
+ul, li, ol{list-style:none;}
+html{background: #fff;}
+.section {display: flex;align-items: center;height: 100vh;position: relative;color: #000;} 
+.webgl { position: fixed; top: 0; left: 0; } 
+section:nth-child(odd) { justify-content: flex-end; } 
