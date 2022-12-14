@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resource/fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/main_mo.css">
+    <link rel="stylesheet" href="./resource/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./resource/owlcarousel/owl.theme.default.min.css">
+    <script src="./resource/jquery.min.js"></script>
+    <script src="./resource/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./resource/fullPage/jquery.fullpage.extensions.min.js"></script>
+    <script src="./js/script_mo.js"></script>
+    <title>Enjoy Street</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header after" id="top">
+            <div class="top-left">
+                <h1 class="logo"><a href="#top" class="logo-inner txt_hidden"><img src="./img/EnjoyStreet_logo.png" alt="EnjoyStreet로고"> 인조이스트리트</a></h1>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <ul class="menu-list after">
+                        <li class="tour"><a href=""><i class="en">Tourist Guide</i></a></li>
+                        <li class="reco"><a href=""><i class="en">Recommended Tour</i></a></li>
+                    </ul>
+                </div>
+                <button type="button" class="partners">파트너스 바로가기</button>
+                <div class="top-right">
+                    <span class="selected-lang en">KOR</span>
+                    <ul class="lang-area">
+                        <li class="lang on"><a id="koBtn" class="en" data-lang="ko">KOR</a></li>
+                        <li class="lang"><a id="cnBtn" class="en" data-lang="cn">CHN</a></li>
+                        <li class="lang"><a id="usBtn" class="en" data-lang="us">ENG</a></li>
+                        <li class="lang"><a id="jpBtn" class="en" data-lang="jp">JPN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="lang-btn"></button>
+            <div class="hbg-btn"></div>
+            <ul class="lang-area-mo">
+                <li class="lang on"><a id="koBtn" class="en" data-lang="ko">KOR</a></li>
+                <li class="lang"><a id="cnBtn" class="en" data-lang="cn">CHN</a></li>
+                <li class="lang"><a id="usBtn" class="en" data-lang="us">ENG</a></li>
+                <li class="lang"><a id="jpBtn" class="en" data-lang="jp">JPN</a></li>
+            </ul>
+        </div>
+        <!-- 햄버거 클릭 시 노출 -->
+        <div class="nav-mo">
+            <div class="inner">
+                <button type="button" class="close-btn"></button>
+                <ul class="menu-list">
+                    <li class="tour"><a href=""><i class="en">Tourist Guide</i></a></li>
+                    <li class="reco"><a href=""><i class="en">Recommended Tour</i></a></li>
+                </ul>
+                <button type="button" class="partners">파트너스 바로가기</button>
+                <!-- <ul class="lang-area-list">
+                    <li class="lang on"><a id="koBtn" class="en" data-lang="ko">KOR</a></li>
+                    <li class="lang"><a id="cnBtn" class="en" data-lang="cn">CHN</a></li>
+                    <li class="lang"><a id="usBtn" class="en" data-lang="us">ENG</a></li>
+                    <li class="lang"><a id="jpBtn" class="en" data-lang="jp">JPN</a></li>
+                </ul> -->
+            </div>
+        </div>
+        <div id="main_cont">
+            <!-- main-banner -->
+            <div class="main-banner section">
+                <div id="owl_01"  class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="inn">
+                                    <div class="tit-area after">
+                                        <h2 data-detect="dany_main_01">Enjoystreet만의<br/>특별한 여행을<br/>경험해보세요</h2>
+                                    </div>
+                                    <div class="img"><img src="https://placeimg.com/870/655/Tech" alt="main top banner01" /></div>
+                                </div>        
+                            </div>
+                            <div class="owl-item">
+                                <div class="inn">
+                                    <div class="tit-area after">
+                                        <h2 data-detect="dany_main_02">세상에 단 하나뿐인<br/>나만의 여행을<br/>만들어 드립니다.</h2>
+                                    </div>
+                                    <div class="img"><img src="https://placeimg.com/870/655/Architecture" alt="main top banner02"></div>
+                                </div>        
+                            </div>
+                            <div class="owl-item">
+                                <div class="inn">
+                                    <div class="tit-area after">
+                                        <h2 data-detect="dany_main_03">여행의 새로운 기준과<br/>트렌드를 만들고<br/>이끌어 갑니다.</h2>
+                                    </div>
+                                    <div class="img"><img src="https://placeimg.com/870/655/Animals" alt="main top banner03"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ES-btn">
+                    <a href="#">
+                        <img class="left-cloud" src="./img/Banner_Rocket02.png" alt="구름">
+                        <p class="es-btn">EnjoyStreet 경험하기<img src="./img/Btn_arr_R.png" alt=""></p>
+                        <img class="rocket" src="./img/Banner_Rocket.png" alt="로켓">
+                    </a>    
+                </div>
+                <div class="marquee_wrap">
+                  <div class="marquee v_line">
+                    <ul class="tithome">
+                      <li>Governance</li>
+                      <li>Sales</li>
+                    </ul>
+                  </div>
+                  <div class="marquee v_bold">
+                    <ul class="tithome">
+                      <li>Governance</li>
+                      <li>Sales</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- mock up -->
+            <div class="mockup section">
+                <div id="owl_02"  class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="inn after owl-stage">
+                            <div class="img owl-item btm">
+                                <img src="./img/mockup04.png" alt="enjoystreet 라이브 리스트">
+                            </div>
+                            <div class="img owl-item">
+                                <img src="./img/mockup01.png" alt="enjoystreet 메인화면">
+                            </div>
+                            <div class="img owl-item btm">
+                                <img src="./img/mockup02.png" alt="enjoystreet 메인화면 2">
+                            </div>
+                            <div class="img owl-item">
+                                <img src="./img/mockup03.png" alt="enjoystreet 메인화면 3">
+                            </div>
+                            <div class="img owl-item btm">
+                                <img src="./img/mockup04.png" alt="enjoystreet 라이브 리스트">
+                            </div>
+                            <div class="img owl-item">
+                                <img src="./img/mockup05.png" alt="enjoystreet 라이브 리스트 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg"></div>
+            </div>
+            <!-- Experience -->
+            <div class="exp section">
+                <div class="inn">
+                    <div class="tit-area after">
+                        <div class="tit">EXPERIENCE</div>
+                        <div class="info">라이브스트리밍 기술을 통해 언제 어디서나 한국 거리를 경험할 수 있습니다.<br/>인조이 스트리트는 물리적 한계를 극복한 새로운 여행 패러다임을 제시합니다.</div>
+                    </div>
+                    <div id="owl_03"  class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="item-area after owl-stage">
+                                <div class="owl-item pd"></div>
+                                <div class="item fst owl-item">
+                                    <div class="inner">
+                                        <div class="tit">나의 소리로 경험하는<br/>다양한 여행서비스</div>
+                                        <div class="sub-tit">모바일에서 경험하는 현장감 넘치는 특별한 여행</div>
+                                        <div class="sub-txt">뛰어난 실시간 음성인식 기술과 분석으로, 개인화된 상품추천부터<br/>여행기록까지 새로운 여행경험을 선사합니다.</div>
+                                    </div>
+                                </div>
+                                <div class="item scd owl-item">
+                                    <div class="inner">
+                                        <div class="tit">유쾌한<br/>경험 서비스</div>
+                                        <div class="sub-tit">인터랙티브한 쇼핑 경험</div>
+                                        <div class="sub-txt">AR과 쇼핑을 결합한<br/> 새롭고 즐거운 체험을 선사합니다.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Travelling -->
+            <div class="tra section">
+                <div class="inn">
+                    <div class="tit-area after">
+                        <div class="tit">TRAVELLING</div>
+                        <div class="info">개인의 취향을 파악하고 맞춤형 여행 콘텐츠를 제공합니다.<br/>나를 위한 여행을 통해 감동과 즐거움이 가득한 여행을 경험하세요.</div>
+                    </div>
+                    <div id="owl_04"  class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="item-area after owl-stage">
+                                <div class="owl-item pd"></div>
+                                <div class="item fst owl-item">
+                                    <div class="inner">
+                                        <div class="tit">맞춤여행을<br/>경험해보세요</div>
+                                        <div class="sub-txt">여러분들을 위한, 여러분들에 의한,<br/>여러분들만의 여행만을 만들어 드립니다.</div>
+                                    </div>
+                                </div>
+                                <div class="item scd owl-item">
+                                    <div class="inner">
+                                        <div class="tit">다양한 테마를<br/>경험해보세요</div>
+                                        <div class="sub-txt">헤리티지부터 트렌디까지<br/>다채로운 여행테마를 제공합니다.</div>
+                                    </div>
+                                </div>
+                                <div class="item thr owl-item">
+                                    <div class="inner">
+                                        <div class="tit">합리적이고<br/>정직한 요금</div>
+                                        <div class="sub-txt">거품을 빼고 여행 본질에 집중했습니다.<br/>선택한 여행지 거리 기준으로 제공합니다.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- VTS -->
+            <div class="vts section">
+                <div class="inn">
+                    <div class="tit-area after">
+                        <div class="tit">VIRTUAL TRAVEL SYSTEM</div>
+                        <div class="info">여행전문 가이드가 여러분을 기다립니다.<br/>다양한 분야와 테마를 겸비한 전문 가이드를 만나보세요.</div>
+                        <button type="button" class="more-btn"><img src="./img/arrR-circle-more.png" alt=""> MORE</button>
+                    </div>
+                    <div class="container">
+                        <div class="carousel">
+                            <div class="arr-btn">
+                                <div class="inn">
+                                    <div class="carousel-prev"></div>
+                                    <div class="carousel-next"></div>
+                                </div>
+                            </div>
+                            <ul class="carousel-pagination">
+                                <li class="carousel-bullet"></li>
+                                <li class="carousel-bullet"></li>
+                            </ul>
+                            <div class="carousel-container after">
+                                <div id="owl_06" class="carousel-item owl-carousel owl-theme owl-loaded">
+                                    <div class="guide-list-area inner owl-stage-outer">
+                                        <ul class="guide-list owl-stage">
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>    
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="carousel-item owl-carousel owl-theme owl-loaded">
+                                    <div class="guide-list-area inner owl-stage-outer">
+                                        <ul class="guide-list owl-stage">
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석2</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>    
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석2</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석2</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석2</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석2</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                            <li class="guide owl-item">
+                                                <div class="guide-img"></div>
+                                                <p class="name"><b>김범석2</b>가이드</p>
+                                                <p class="lang en">Lang <b>KR,CN</b></p>
+                                                <p class="info-txt">#유머러스  #친절  #한류소개  #한국맛집 소개  #드라이빙  #VIP전문</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-inc">
+                    <div class="inn">
+                        <p class="info-txt"><b>다양한 분야와 테마</b>를 겸비한<br/><b>전문가이드</b>를 <b>우리는 기다립니다</b></p>
+                        <p class="apply-txt">가이드 지원하기<img src="./img/Banner_Guide_arrR.png" alt="오른쪽 화살표"></p>
+                        <div class="bg-img">
+                            <img src="./img/Banner_Guide_left.png" alt="" class="left">
+                            <img src="./img/Banner_Guide.png" alt="" class="center">
+                            <img src="./img/Banner_Guide_right.png" alt="" class="right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Enjoy street -->
+            <div class="es section">
+                <div class="inn">
+                    <div class="tit-area after">
+                        <div class="tit">ENJOY STREET</div>
+                        <div class="info">뉴노멀 시대 새로운 여행 트렌드를 제시합니다.<br/>온-오프라인 경계를 넘는 VTS를 통해 특별한 여행 경험을 즐겨보세요.</div>
+                    </div>
+                    <div id="owl_05" class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="item-area after owl-stage">
+                                <div class="item fst owl-item">
+                                    <div class="inner">
+                                        <div class="sub-txt">모바일로 만나는 <b>라이브 투어</b>와 <b>맞춤투어 서비스</b></div>
+                                        <div class="tit">여행 전문 가이드와 함께하는<br/><b>비대면 실시간 라이브투어 경험하기</b><img src="./img/ES_arrR_W.png" alt="footer img01"></div>
+                                    </div>
+                                </div>
+                                <div class="item scd owl-item">
+                                    <div class="inner">
+                                        <div class="sub-txt">모바일로 만나는 <b>라이브 투어</b>와 <b>맞춤투어 서비스</b></div>
+                                        <div class="tit">여행객과 여행전문가이드,<br/>소상공인을 연결하는<br/><b>공유와 상생의 플랫폼</b><img src="./img/ES_arrR_W.png" alt="footer img02"></div>
+                                    </div>
+                                </div>
+                                <div class="item thr owl-item">
+                                    <div class="inner">
+                                        <div class="sub-txt">모바일로 만나는 <b>라이브 투어</b>와 <b>맞춤투어 서비스</b></div>
+                                        <div class="tit">라이브 투어 중 경험하는<br/><b>E-COMMERCE 기능</b><img src="./img/ES_arrR_W.png" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="item fou owl-item">
+                                    <div class="inner">
+                                        <div class="sub-txt">모바일로 만나는 <b>라이브 투어</b>와 <b>맞춤투어 서비스</b></div>
+                                        <div class="tit">온 오프라인을 연결하는<br/><b>맞춤투어</b><img src="./img/ES_arrR_W.png" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="footer">
+                    <div class="es-illust"></div>
+                    <div class="contents inner">
+                        <h1 class="logo"><a class="txt_hidden" href="#top"><img src="./img/es_txt_logo_wh.svg" alt="흰색 EnjoyStreet로고"> 인조이스트리트</a></h1>
+                        <!-- left-area -->
+                        <ul class="left-area">
+                            <li class="terms-area">
+                                <ul class="terms after">
+                                    <li><a href="#" data-detect="dany_ft_01_1">이용약관</a></li>
+                                    <li><a href="#" data-detect="dany_ft_01_2">개인정보처리방침</a></li>
+                                    <li><a href="#" data-detect="dany_ft_01_3">위치정보이용약관</a></li>
+                                </ul>
+                            </li>
+                            <li class="company-info-area">
+                                <ul class="company-info">
+                                    <li>
+                                        <span data-detect="dany_ft_02_1">주식회사 브이알에듀</span>
+                                        <span data-detect="dany_ft_02_2">대표 김재헌</span>
+                                        <span><i class="bold" data-detect="dany_ft_02_3">사업등록번호</i> <i class="num">485-88-00534</i></span>
+                                        <span><a href="#" data-detect="dany_ft_02_4">사업자정보확인</a></span>
+                                    </li>
+                                    <li>
+                                        <span data-detect="dany_ft_02_5">개인정보보호 책임자 김재헌</span>
+                                        <span data-detect="dany_ft_02_6"><i class="bold">통신판매업신고번호</i> 제<i class="num">2021</i>-서울마포-<i class="num">2876</i></span>
+                                        <span data-detect="dany_ft_02_7"><i class="bold">관광사업자 등록번호</i> 제<i class="num">2021-07</i>호</span>
+                                    </li>
+                                    <li>
+                                        <span data-detect="dany_ft_02_8"><i class="num">04071</i> 서울특별시 마포구 독막로 <i class="num">10 8</i>층</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="en bold">Tel.</i> <i class="num">070-8221-1839</i></span>
+                                        <span><i class="en bold">Fax.</i> <i class="num">02-6322-2736</i></span>
+                                        <span><i class="en bold">E-Mail.</i> help@enjoystreet.com</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="add-en">
+                                <ul>
+                                    <li>
+                                        <p class="en bold">office location</p>
+                                        <p class="en"><i class="num">3-3-1-4</i>F, Shinjuku, Shinjuku-ku, Tokyo <i class="num">160-0022</i> Japan.</p>
+                                        <span class="en"><i class="en bold">Tel.</i><i class="num">+81-50-5532-7564</i></span>
+                                        <span class="en"><i class="en bold">Fax.</i><i class="num">+81-3-6385-7561</i></span>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="copyright">
+                                <ul>
+                                    <li>
+                                        <p class="copy-txt" data-detect="dany_ft_03">브이알에듀는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품·거래정보 및 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
+                                        <p class="en">Copyright 2021 Enjoy Street, All rights reserved.</p>
+                                    </li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                        <!-- right-area -->
+                        <div class="right-area">
+                            <div class="btn-area">
+                                <button type="button" data-detect="dany_ft_04_1">판매점 입점안내</button>
+                                <button type="button" data-detect="dany_ft_04_2">가이드 가입안내</button>
+                            </div>
+                            <ul class="sns-area after">
+                                <li><a href="https://blog.naver.com/bumsug78" target="_blank" class="sns_nblog"></a></li>
+                                <li><a href="https://www.instagram.com/bumsug/" target="_blank" class="sns_instar"></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCGNHE6QCSg38RpDyFONm7xw/about" target="_blank" class="sns_youtube"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
