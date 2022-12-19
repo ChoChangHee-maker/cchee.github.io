@@ -126,7 +126,14 @@ $(document).ready(function () {
     // call tick again on the next frame
     window.requestAnimationFrame(tick);
   };
-  tick();
+  tick();  
+
+  function onWindowResize(){
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
+  window.addEventListener('resize', onWindowResize);
 
   //////// fullpage.js
   $("#fullpage").fullpage({
@@ -156,7 +163,7 @@ $(document).ready(function () {
   };
   const initiateINC = () => {
     trail.forEach((cur) => cur.classList.remove("trail_active"));
-    value === 80 ? (value = 0) : (value += 20);
+    value === 75 ? (value = 0) : (value += 25);
     trailUpdate();
   };
 
@@ -165,7 +172,7 @@ $(document).ready(function () {
     // Remove active from all trails
     trail.forEach((cur) => cur.classList.remove("trail_active"));
     // decrease transform value
-    value === 0 ? (value = 80) : (value -= 20);
+    value === 0 ? (value = 75) : (value -= 25);
     // update trailValue based on value
     trailUpdate();
   };
@@ -193,14 +200,12 @@ $(document).ready(function () {
   const trailUpdate = () => {
     if (value === 0) {
       trailValue = 0;
-    } else if (value === 20) {
+    } else if (value === 25) {
       trailValue = 1;
-    } else if (value === 40) {
+    } else if (value === 50) {
       trailValue = 2;
-    } else if (value === 60) {
+    } else if (value === 75) {
       trailValue = 3;
-    } else {
-      trailValue = 4;
     }
   };
 
@@ -230,13 +235,11 @@ $(document).ready(function () {
     if (check.classList.contains("box1")) {
       value = 0;
     } else if (check.classList.contains("box2")) {
-      value = 20;
+      value = 25;
     } else if (check.classList.contains("box3")) {
-      value = 40;
+      value = 50;
     } else if (check.classList.contains("box4")) {
-      value = 60;
-    } else {
-      value = 80;
+      value = 75;
     }
     // update trail based on value
     trailUpdate();
@@ -324,5 +327,5 @@ window.onload = function () {
   }
   setTimeout(function(){
     $(".loading_wrap").fadeOut(400)
-  },6000)
+  },3000)
 };
