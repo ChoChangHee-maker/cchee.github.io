@@ -126,14 +126,7 @@ $(document).ready(function () {
     // call tick again on the next frame
     window.requestAnimationFrame(tick);
   };
-  tick();  
-
-  function onWindowResize(){
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-  }
-  window.addEventListener('resize', onWindowResize);
+  tick();
 
   //////// fullpage.js
   $("#fullpage").fullpage({
