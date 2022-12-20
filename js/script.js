@@ -280,6 +280,17 @@ $(document).ready(function () {
     // call mobile on touch end
     slider.addEventListener("touchend", mobile);
   })();
+
+  // accodian menu
+  $(".another_box div").hide();
+  // $("ul > li:first-child a").next().show();
+  $(".another_box ul li a").click(function(){
+    $(this).next().slideToggle(300);
+    // $(this).next().slideDown(300);
+    $(".another_box ul li a").not(this).next().slideUp(300);
+    return false;
+  });
+  $(".another_box ul li a").eq(0).trigger("click");
 });
 
 ////////client rolling banner
